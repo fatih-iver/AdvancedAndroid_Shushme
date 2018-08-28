@@ -9,8 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- TODO (1) Add meta-data tag with API key -->
-
         <activity android:name="com.example.android.shushme.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +21,13 @@
             android:authorities="com.example.android.shushme"
             android:exported="false"/>
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCnx5hUDgs9I3dBF1DS1xs98Tzgd7yjQD0"/>
+
     </application>
 
-    <!-- TODO (2) Add uses-permission tags for INTERNET and ACCESS_FINE_LOCATION -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
 </manifest>
